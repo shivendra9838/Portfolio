@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Online Book Store",
+    "desc": "This site has been made using PHP with MYSQL (procedure functions)! The layout use Bootstrap to make it more responsive. It's just a simple web.site to buy and sell books.",
+    "image": "reactprojects",
+    "category": "PHP",
+    "links": {
+      "view": "https://online-cse-book-store.vercel.app/",
+      "code": "https://github.com/shivendra9838/Online-CSE-Book-Store"
+    }
+  },
+  {
+  "name": "Learning Management System",
+    "desc": "A Web Based Learning Managenent System. This Project is developed using HTML, CSS, Javascript. this project aims to create a cooperative platform that bridges people together and helps them to learn.",
+    "image": "flipkartphp",
+    "category": "Simple",
+    "links": {
+      "view": "https://github.com/shivendra9838/Learning-Management-System-HTML-CSS/tree/main/priyanshu",
+      "code": "https://github.com/shivendra9838/Learning-Management-System-HTML-CSS/tree/main/priyanshu"
+    }
+  },
+  {
+    "name": "Travel Website",
+    "desc": "Travel Website, a web application built using HTML, CSS, and JavaScript. This project aims to create a cooperative platform that bridges people together",
+    "image": "flipkartmern",
+    "category": "mern",
+    "links": {
+      "view": "https://github.com/shivendra9838/Travel-Website-Using-HTML-CSS-Javascript?tab=readme-ov-file",
+      "code": "https://github.com/shivendra9838/Travel-Website-Using-HTML-CSS-Javascript?tab=readme-ov-file"
+    }
+  },
+  {
+    "name": "Weatherly Android",
+    "desc": "Native android app built using Java, XML and Volley dependencies. Provides weather forecast.",
+    "image": "weatherlyandroid",
+    "category": "android",
+    "links": {
+      "view": "https://fancygarmentsnetlifyapp.netlify.app/",
+      "code": "https://github.com/-sable/weatherly-android"
+    }
+  },
+  {
+    "name": "Fancy Garments",
+    "desc": "Full-Stack E-Commerce Website built using MERN stack and realtime chat with the help of socket.iO",
+    "image": "instagrammern",
+    "category": "mern",
+    "links": {
+      "view": "https://fancygarmentsnetlifyapp.netlify.app/",
+      "code": "https://github.com/shivendra9838/Fancy-Garments-in-ReactJS"
+    }
+  },
+  {
+    "name": "Travel Website",
+    "desc": "Travel Website, a web application built using HTML, CSS, and JavaScript. This project aims to create a cooperative platform that bridges people together",
+    "image": "flipkartmern",
+    "category": "mern",
+    "links": {
+      "view": "https://github.com/shivendra9838/Travel-Website-Using-HTML-CSS-Javascript?tab=readme-ov-file",
+      "code": "https://github.com/shivendra9838/Travel-Website-Using-HTML-CSS-Javascript?tab=readme-ov-file"
+    }
+  },
+  {
+    "name": "Fitness Management System",
+    "desc": "Developed a console-based fitness management system in C to manage client records, workout schedules, and membership details.",
+    "image": "resumegen",
+    "category": "Console Based",
+    "links": {
+      "view": "https://github.com/shivendra9838/Fitness-Management-System-in-C",
+      "code": "https://github.com/shivendra9838/Fitness-Management-System-in-C"
+    }
+  },
+  {
+    "name": "Online Book Store",
+    "desc": "This site has been made using PHP with MYSQL (procedure functions)! The layout use Bootstrap to make it more responsive. It's just a simple web.site to buy and sell books.",
+    "image": "reactprojects",
+    "category": "PHP",
+    "links": {
+      "view": "https://online-cse-book-store.vercel.app/",
+      "code": "https://github.com/shivendra9838/Online-CSE-Book-Store"
+    }
+  },
+  {
+    "name": "Learning Management System",
+    "desc": "A Web Based Learning Managenent System. This Project is developed using HTML, CSS, Javascript. this project aims to create a cooperative platform that bridges people together and helps them to learn.",
+    "image": "flipkartphp",
+    "category": "Simple",
+    "links": {
+      "view": "https://github.com/shivendra9838/Learning-Management-System-HTML-CSS/tree/main/priyanshu",
+      "code": "https://github.com/shivendra9838/Learning-Management-System-HTML-CSS/tree/main/priyanshu"
+    }
+  }
+]
