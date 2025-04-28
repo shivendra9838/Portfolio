@@ -63,7 +63,7 @@
     "name": "Fitness Management System",
     "desc": "Developed a console-based fitness management system in C to manage client records, workout schedules, and membership details.",
     "image": "resumegen",
-    "category": "Console Based",
+    "category": "basicweb",
     "links": {
       "view": "https://github.com/shivendra9838/Fitness-Management-System-in-C",
       "code": "https://github.com/shivendra9838/Fitness-Management-System-in-C"
@@ -73,7 +73,7 @@
     "name": "Online Book Store",
     "desc": "This site has been made using PHP with MYSQL (procedure functions)! The layout use Bootstrap to make it more responsive. It's just a simple web.site to buy and sell books.",
     "image": "reactprojects",
-    "category": "PHP",
+    "category": "android",
     "links": {
       "view": "https://online-cse-book-store.vercel.app/",
       "code": "https://github.com/shivendra9838/Online-CSE-Book-Store"
@@ -83,7 +83,7 @@
     "name": "Learning Management System",
     "desc": "A Web Based Learning Managenent System. This Project is developed using HTML, CSS, Javascript. this project aims to create a cooperative platform that bridges people together and helps them to learn.",
     "image": "flipkartphp",
-    "category": "Simple",
+    "category": "lamp",
     "links": {
       "view": "https://github.com/shivendra9838/Learning-Management-System-HTML-CSS/tree/main/priyanshu",
       "code": "https://github.com/shivendra9838/Learning-Management-System-HTML-CSS/tree/main/priyanshu"
