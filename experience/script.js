@@ -78,7 +78,7 @@ $(document).ready(function(){
             type: 'certification',
             title: 'Cloud Computing 12 Weeks Course by NPTEL',
             description: 'Completed Course',
-            date: 'October 2024',
+            date: 'May 2025',
             details: 'Studied cloud computing concepts, including virtualization and deployment models.'
         }
     ];

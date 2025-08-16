@@ -1,4 +1,24 @@
 [
+   {
+    "name": "Fancy Garments",
+    "desc": "Fancy Garments is a full-stack MERN e-commerce platform with secure payments, order tracking, admin dashboard, multi-language support, and an AI-powered chatbot",
+    "image": "fancy",
+    "category": "mern",
+    "links": {
+      "view": "https://garmentsin.vercel.app/",
+      "code": "https://github.com/shivendra9838/Fancy-Garments-in-ReactJS"
+    }
+  },
+    {
+    "name": "Travel Website",
+    "desc": "Every Travel is a responsive travel website with destination search, booking, cart checkout, and an admin panel for real-time user management.",
+    "image": "flipkartmern",
+    "category": "mern",
+    "links": {
+      "view": "https://travel-admin-panel.surge.sh/",
+      "code": "https://github.com/shivendra9838/Travel-Website-Using-HTML-CSS-Javascript?tab=readme-ov-file"
+    }
+  },
   {
     "name": "Online Book Store",
     "desc": "This site has been made using PHP with MYSQL (procedure functions)! The layout use Bootstrap to make it more responsive. It's just a simple web.site to buy and sell books.",
@@ -19,44 +39,26 @@
       "code": "https://github.com/shivendra9838/Learning-Management-System-HTML-CSS/tree/main/priyanshu"
     }
   },
+
   {
-    "name": "Travel Website",
-    "desc": "Travel Website, a web application built using HTML, CSS, and JavaScript. This project aims to create a cooperative platform that bridges people together",
-    "image": "flipkartmern",
-    "category": "mern",
+    "name": "AI Safety Incident Dashboard",
+    "desc": "Build a simple interactive interface to demonstrate core frontend skills—UI, user interaction, state management, and input handling—aligned with HumanChain's AI safety mission.",
+    "image": "Ai",
+    "category": "Ai",
     "links": {
-      "view": "https://github.com/shivendra9838/Travel-Website-Using-HTML-CSS-Javascript?tab=readme-ov-file",
-      "code": "https://github.com/shivendra9838/Travel-Website-Using-HTML-CSS-Javascript?tab=readme-ov-file"
-    }
-  },
-  {
-    "name": "Weatherly Android",
-    "desc": "Native android app built using Java, XML and Volley dependencies. Provides weather forecast.",
-    "image": "weatherlyandroid",
-    "category": "android",
-    "links": {
-      "view": "https://fancygarmentsnetlifyapp.netlify.app/",
+      "view": "https://aidasboard.netlify.app/",
       "code": "https://github.com/-sable/weatherly-android"
     }
   },
+ 
   {
-    "name": "Fancy Garments",
-    "desc": "Full-Stack E-Commerce Website built using MERN stack and realtime chat with the help of socket.iO",
-    "image": "instagrammern",
+    "name": "Furniture-Store",
+    "desc": "Furnish Your Dream Home is an online furniture store with customizable products, a 3D room planner, and a seamless shopping experience.",
+    "image": "furniture",
     "category": "mern",
     "links": {
-      "view": "https://fancygarmentsnetlifyapp.netlify.app/",
-      "code": "https://github.com/shivendra9838/Fancy-Garments-in-ReactJS"
-    }
-  },
-  {
-    "name": "Travel Website",
-    "desc": "Travel Website, a web application built using HTML, CSS, and JavaScript. This project aims to create a cooperative platform that bridges people together",
-    "image": "flipkartmern",
-    "category": "mern",
-    "links": {
-      "view": "https://github.com/shivendra9838/Travel-Website-Using-HTML-CSS-Javascript?tab=readme-ov-file",
-      "code": "https://github.com/shivendra9838/Travel-Website-Using-HTML-CSS-Javascript?tab=readme-ov-file"
+      "view": "https://truthful-stranger-production.up.railway.app/",
+      "code": "https://github.com/shivendra9838/Furniture-Website-in-Laravel"
     }
   },
   {
@@ -67,6 +69,16 @@
     "links": {
       "view": "https://github.com/shivendra9838/Fitness-Management-System-in-C",
       "code": "https://github.com/shivendra9838/Fitness-Management-System-in-C"
+    }
+  },
+     {
+    "name": "Fancy Garments",
+    "desc": "Fancy Garments is a full-stack MERN e-commerce platform with secure payments, order tracking, admin dashboard, multi-language support, and an AI-powered chatbot",
+    "image": "fancy",
+    "category": "mern",
+    "links": {
+      "view": "https://garmentsin.vercel.app/",
+      "code": "https://github.com/shivendra9838/Fancy-Garments-in-ReactJS"
     }
   },
   {
