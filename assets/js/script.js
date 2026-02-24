@@ -29,12 +29,21 @@ $(document).ready(function () {
         });
     });
 
-    // smooth scrolling
+    // smooth scrolling (disabled for work-experience section)
     $('a[href*="#"]').on('click', function (e) {
         e.preventDefault();
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top,
-        }, 500, 'linear')
+        var target = $(this).attr('href');
+        
+        // Check if target is work-experience section
+        if (target === '#work-experience') {
+            // Instant scroll for work experience
+            $('html, body').scrollTop($(target).offset().top);
+        } else {
+            // Smooth scroll for other sections
+            $('html, body').animate({
+                scrollTop: $(target).offset().top,
+            }, 500, 'linear')
+        }
     });
 
     // <!-- emailjs to mail contact form data -->

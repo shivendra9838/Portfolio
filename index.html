@@ -20,6 +20,330 @@
             padding: 0;
             margin: 0;
         }
+        
+        /* Enhanced Work Experience Styles */
+        .work-experience {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 5rem 9%;
+            scroll-behavior: auto;
+        }
+        
+        .work-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .work-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: none;
+            padding: 0;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .work-header {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            position: relative;
+        }
+        
+        .company-logo {
+            width: 60px;
+            height: 60px;
+            background: #9333ea;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .company-info h3 {
+            color: #1f2937;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #1f2937 0%, #4b5563 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .company-info h4 {
+            color: #6b7280;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .location {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+        
+        .location i {
+            color: #9333ea;
+            font-size: 0.8rem;
+        }
+        
+        .duration {
+            margin-left: auto;
+            text-align: right;
+        }
+        
+        .date {
+            display: block;
+            color: #6b7280;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .badge.current {
+            background: #10b981;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .work-body {
+            padding: 2rem;
+        }
+        
+        .work-desc {
+            color: #4b5563;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(147, 51, 234, 0.02);
+            border-left: 3px solid #9333ea;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-item {
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #9333ea;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .stat-label {
+            color: #6b7280;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .responsibilities, .achievements-list {
+            margin-bottom: 2rem;
+        }
+        
+        .responsibilities h5, .achievements-list h5 {
+            color: #1f2937;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .responsibilities h5 i, .achievements-list h5 i {
+            color: #9333ea;
+            font-size: 1rem;
+        }
+        
+        .responsibility-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .resp-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: rgba(147, 51, 234, 0.02);
+            border-radius: 12px;
+            border: 1px solid transparent;
+        }
+        
+        .resp-item i {
+            color: #9333ea;
+            font-size: 1.1rem;
+        }
+        
+        .resp-item span {
+            color: #4b5563;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .achievements-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .achievements-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.75rem 0;
+            color: #4b5563;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            border-bottom: 1px solid rgba(147, 51, 234, 0.05);
+        }
+        
+        .achievements-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .achievements-list li i {
+            color: #10b981;
+            font-size: 1rem;
+            margin-top: 0.1rem;
+        }
+        
+        .work-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(147, 51, 234, 0.1);
+        }
+        
+        .tech-stack {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        
+        .tech-label {
+            color: #6b7280;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .tech-tag {
+            background: #f8f9fa;
+            color: #9333ea;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .show-details {
+            background: #9333ea;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .work-experience {
+                padding: 3rem 5%;
+            }
+            
+            .work-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .duration {
+                margin-left: 0;
+                text-align: center;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+            
+            .responsibility-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .work-footer {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .tech-stack {
+                justify-content: center;
+            }
+        }
+        
+        /* Accessibility Improvements */
+        .work-card:focus-within {
+            outline: 2px solid #9333ea;
+            outline-offset: 2px;
+        }
+        
+        .show-details:focus {
+            outline: 2px solid #9333ea;
+            outline-offset: 2px;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
         /* ...existing code... */
     </style>
 </head>
@@ -41,8 +365,9 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#experience">Achievements & Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -180,6 +505,113 @@
 
 </section>
 <!-- work project section ends -->
+
+<!-- work experience section starts -->
+<section class="work-experience" id="work-experience">
+
+  <h2 class="heading"><i class="fas fa-briefcase"></i>Work <span>Experience</span></h2>
+
+  <div class="work-container">
+
+    <div class="work-card">
+      <div class="work-header">
+        <div class="company-logo">
+          <i class="fas fa-server"></i>
+        </div>
+        <div class="company-info">
+          <h3>Inside Technical Sales Engineer</h3>
+          <h4>Vareli Tecnac Pvt. Ltd.</h4>
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Pune, Maharashtra, India</span>
+          </div>
+        </div>
+        <div class="duration">
+          <span class="date">Sep 2025 - Present</span>
+          <span class="badge current">Current</span>
+        </div>
+      </div>
+      
+      <div class="work-body">
+        <p class="work-desc">Leading IT infrastructure and technical solutions provider specializing in enterprise sales operations and client relationship management.</p>
+        
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Enterprise Clients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">95%</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">₹2.5Cr+</div>
+            <div class="stat-label">Pipeline Revenue</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">35%</div>
+            <div class="stat-label">Conversion Rate</div>
+          </div>
+        </div>
+        
+        <div class="responsibilities">
+          <h5><i class="fas fa-tasks"></i> Key Responsibilities</h5>
+          <div class="responsibility-grid">
+            <div class="resp-item">
+              <i class="fas fa-chart-line"></i>
+              <span>Sales Operations Management</span>
+            </div>
+            <div class="resp-item">
+              <i class="fas fa-users"></i>
+              <span>Client Coordination</span>
+            </div>
+            <div class="resp-item">
+              <i class="fas fa-cogs"></i>
+              <span>Technical Requirements Analysis</span>
+            </div>
+            <div class="resp-item">
+              <i class="fas fa-file-alt"></i>
+              <span>Proposal & Quotation Preparation</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="achievements-list">
+          <h5><i class="fas fa-trophy"></i> Key Achievements</h5>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Managed end-to-end sales operations for 50+ enterprise clients, reducing response time by 40%</li>
+            <li><i class="fas fa-check-circle"></i> Achieved 95% client satisfaction across manufacturing, healthcare, and finance sectors</li>
+            <li><i class="fas fa-check-circle"></i> Generated ₹2.5Cr+ pipeline revenue with 35% proposal conversion rate</li>
+            <li><i class="fas fa-check-circle"></i> Built strategic relationships with 40+ client organizations</li>
+            <li><i class="fas fa-check-circle"></i> Optimized sales processes, reducing proposal preparation time from 3 days to 24 hours</li>
+          </ul>
+        </div>
+        
+        <div class="work-footer">
+          <div class="tech-stack">
+            <span class="tech-label">Technologies:</span>
+            <span class="tech-tag">CRM Systems</span>
+            <span class="tech-tag">Sales Operations</span>
+            <span class="tech-tag">IT Infrastructure</span>
+          </div>
+          <button class="btn show-details">
+            <i class="fas fa-external-link-alt"></i>
+            Show Details
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="morebtn">
+    <a href="/work-experience.html" class="btn"><span>View All Experience</span>
+      <i class="fas fa-arrow-right"></i>
+  </a>
+  </div>
+
+</section>
+<!-- work experience section ends -->
 
 <!-- education section starts -->
 <section class="education" id="education">
@@ -329,6 +761,7 @@
           <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
           <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
           <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+          <a href="#work-experience"><i class="fas fa-chevron-circle-right"></i> work experience</a>
           <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
       </div>
 
@@ -369,9 +802,6 @@
 <!-- particle.js links -->
 <script src="./assets/js/particles.min.js"></script>
 <script src="./assets/js/app.js"></script>
-
-<!-- vanilla tilt.js links -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- scroll reveal anim -->
 <script src="https://unpkg.com/scrollreveal"></script>
