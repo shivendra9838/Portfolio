@@ -31,19 +31,24 @@ $(document).ready(function () {
 
     // smooth scrolling (disabled for work-experience section)
     $('a[href*="#"]').on('click', function (e) {
-        e.preventDefault();
         var target = $(this).attr('href');
         
-        // Check if target is work-experience section
-        if (target === '#work-experience') {
-            // Instant scroll for work experience
-            $('html, body').scrollTop($(target).offset().top);
-        } else {
-            // Smooth scroll for other sections
-            $('html, body').animate({
-                scrollTop: $(target).offset().top,
-            }, 500, 'linear')
+        // Check if it's an internal anchor link (starts with #)
+        if (target.startsWith('#')) {
+            e.preventDefault();
+            
+            // Check if target is work-experience section
+            if (target === '#work-experience') {
+                // Instant scroll for work experience
+                $('html, body').scrollTop($(target).offset().top);
+            } else {
+                // Smooth scroll for other sections
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top,
+                }, 500, 'linear')
+            }
         }
+        // If it's not an internal anchor link (like /work-experience.html), let it work normally
     });
 
     // <!-- emailjs to mail contact form data -->
