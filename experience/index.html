@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +10,9 @@
     <link id='favicon' rel="shortcut icon" href="/assets/images/hero (2).png" type="image/x-png">
     <title>Experience | Portfolio</title>
 </head>
-<body oncontextmenu="return false">
+<body>
+<div class="scroll-progress" id="scroll-progress"></div>
+<div class="ambient-bg" aria-hidden="true"></div>
 <!-- navbar starts -->
 <header>
     <a href="/" class="logo"><i class="fab fa-node-js"></i> Shivendra</a>
@@ -22,8 +23,9 @@
             <li><a href="/#about">About</a></li>
             <li><a href="/#skills">Skills</a></li>
             <li><a href="/#education">Education</a></li>
-            <li><a href="/#work">Work</a></li>
-            <li><a class="active" href="/#experience">Experience</a></li>
+            <li><a href="/#work">Projects</a></li>
+            <li><a href="/work-experience.html">Work Experience</a></li>
+            <li><a class="active" href="/experience/">Achievements & Certifications</a></li>
             <li><a href="/#contact">Contact</a></li>
         </ul>
     </nav>
@@ -32,20 +34,27 @@
 
 <!-- experience section starts -->
 <section class="experience" id="experience">
-    <h2 class="heading"><i class="fas fa-briefcase"></i> Achievements & <span>Certifications</span></h2>
-    <div class="quote">
+    <div class="section-badge reveal-on-scroll"><i class="fas fa-award"></i> Professional Journey</div>
+    <h2 class="heading reveal-on-scroll">Achievements & <span>Certifications</span></h2>
+    <div class="heading-underline reveal-on-scroll"></div>
+    <div class="quote reveal-on-scroll">
         <span>Every achievement in your life is orchestrated to teach you something you need to know to move forward.</span>
     </div>
-    <div class="filter-buttons">
+    <div class="filter-buttons reveal-on-scroll">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="achievement">Achievements</button>
         <button class="filter-btn" data-filter="certification">Certifications</button>
     </div>
     <div class="timeline" id="timeline"></div>
+    <div class="timeline-clearfix"></div>
     <div class="morebtn">
-        <a href="/#home" class="btn">
+        <a href="https://drive.google.com/file/d/1j-Yn2IrL3CEIsqWJt6umUPobQ7UwRAFg/view?usp=sharing" class="btn" target="_blank">
+            <i class="fas fa-certificate"></i>
+            <span>View Certificate</span>
+        </a>
+        <a href="/work-experience.html" class="btn">
             <i class="fas fa-arrow-left"></i>
-            <span>Back to Home</span>
+            <span>Back to Work Experience</span>
         </a>
     </div>
 </section>
@@ -98,4 +107,3 @@
 <script src="./script.js"></script>
 </body>
 </html>
-```

@@ -65,6 +65,13 @@
             font-size: 1.5rem;
             color: white;
         }
+
+        .company-logo img {
+            width: 44px;
+            height: 44px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
         
         .company-info h3 {
             color: #1f2937;
@@ -358,7 +365,7 @@
         /* ...existing code... */
     </style>
 </head>
-<body oncontextmenu="return false">
+<body>
 
 <!-- pre loader -->
 <!-- <div class="loader-container">
@@ -375,6 +382,7 @@
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="https://drive.google.com/file/d/1zFC4vlpUZKKi-ndSkmvrTSBklLphzRRO/view?usp=sharing" target="_blank">Resume</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#work">Projects</a></li>
             <li><a href="#work-experience">Work Experience</a></li>
@@ -393,6 +401,7 @@
     <div class="content">
     <h2>Hi There,<br/> I'm Shivendra <span>Tiwari</span></h2>
     <p>i am into <span class="typing-text"></span></p>
+    <p>MERN Stack Developer · LPU Computer Science '26 · Open to Full-Time Roles</p>
     <a href="#about" class="btn"><span>About Me</span>
       <i class="fas fa-arrow-circle-down"></i>
     </a>
@@ -400,10 +409,10 @@
         <ul class="social-icons">
           <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/shivendra-tiwari-63ab1524a/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
           <li><a class="github" aria-label="GitHub" href="https://github.com/shivendra9838" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a class="twitter" aria-label="Twitter" href="https://www.instagram.com/techoverflows" target="_blank"><i class="fab fa-twitter"></i></a></li>
-          <li><a class="telegram" aria-label="Telegram" href="https://www.linkedin.com/in/shivendra-tiwari-63ab1524a/" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
-          <li><a class="instagram" aria-label="Instagram" href="https://www.linkedin.com/in/shivendra-tiwari-63ab1524a/"><i class="fab fa-instagram" target="_blank"></i></a></li>
-          <li><a class="dev" aria-label="Dev" href="https://www.linkedin.com/in/shivendra-tiwari-63ab1524a/" target="_blank"><i class="fab fa-dev"></i></a></li>
+          <li><a class="twitter" aria-label="Twitter" href="https://x.com/techoverflows" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="telegram" aria-label="Telegram" href="https://t.me/techoverflows" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/techoverflows" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a class="dev" aria-label="Dev" href="https://dev.to/techoverflows" target="_blank"><i class="fab fa-dev"></i></a></li>
         </ul>
       </div>
     </div>
@@ -427,11 +436,7 @@
         <h3>I'm Shivendra</h3>
         <span class="tag">Full Stack Developer</span>
         
-        <p>I am a Full Stack Developer and A Computer Science Student at Lovely Professional University, Punjab.
-          I am very passionate about improving my coding skills & developing applications & websites.
-          I build WebApps and Websites using MERN Stack.
-          Working for myself to improve my skills.
-          Love to build Full-Stack clones. </p>
+        <p>I spent 6 months as the person responsible when a government platform serving 1 million citizens went down at 2am. I got it fixed by working together with my team. That's the kind of engineer I am — I build things that hold up under pressure, not just in demos. Currently finishing my CS degree at LPU while actively building with the MERN stack. Looking for my first full-time role where the problems are real</p>
         
         <div class="box-container">
             <!-- <div class="box">
@@ -439,17 +444,17 @@
               <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
             </div> -->
             <div class="box">
-              <p><span> email : </span> shivendra@lpu.in</p>
+              <p><span> email : </span> tiwarishivendra589@gmail.com</p>
               <p><span> place : </span> Jaunpur,Uttar Pradesh, India - 222202</p>
             </div>
         </div>
         
         <div class="resumebtn" style="display: flex; gap: 10px;">
-          <a href="https://drive.google.com/file/d/1BCL1IpEzRpWY_-IJIbPrVRDLTL1YrAzF/view?usp=sharing" target="_blank" class="btn">
+          <a href="https://drive.google.com/file/d/1zFC4vlpUZKKi-ndSkmvrTSBklLphzRRO/view?usp=sharing" target="_blank" class="btn">
               <span>View Resume</span>
               <i class="fas fa-eye"></i>
           </a>
-          <a href="https://drive.google.com/file/d/1BCL1IpEzRpWY_-IJIbPrVRDLTL1YrAzF/view?usp=sharing" class="btn" download="Shivendra_Tiwari_Resume.pdf">
+          <a href="https://drive.google.com/uc?export=download&id=1zFC4vlpUZKKi-ndSkmvrTSBklLphzRRO" class="btn" download="Shivendra_Tiwari_Resume.pdf">
               <span>Download</span>
               <i class="fas fa-download"></i>
           </a>
@@ -527,7 +532,7 @@
     <div class="work-card">
       <div class="work-header">
         <div class="company-logo">
-          <i class="fas fa-laptop-code"></i>
+          <img src="./assets/images/vareli-tecnac-logo.webp" alt="Vareli Tecnec Pvt. Ltd. logo">
         </div>
         <div class="company-info">
           <h3>Technical Consultant Intern</h3>
@@ -833,7 +838,7 @@
               <a href="https://github.com/shivendra9838" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
               <a href="mailto:tiwarishivendra589@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
               <a href="https://x.com/" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
-              <a href="https://leetcode.com/u/shivendrat498/" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+              <a href="https://leetcode.com/u/shivendrat498/" class="fas fa-code" aria-label="LeetCode" target="_blank"></a>
           </div>
       </div>
   </div>

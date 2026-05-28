@@ -1,4 +1,22 @@
 $(document).ready(function(){
+    let revealObserver;
+
+    function observeRevealTargets() {
+        if (!revealObserver) {
+            revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.15 });
+        }
+
+        document.querySelectorAll('.reveal-on-scroll, .container, .footer .box').forEach((el) => {
+            revealObserver.observe(el);
+        });
+    }
+
     // Navbar toggle for mobile
     $('#menu').click(function(){
         $(this).toggleClass('fa-times');
@@ -14,10 +32,22 @@ $(document).ready(function(){
         } else {
             document.querySelector('#scroll-top').classList.remove('active');
         }
+
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+        $('#scroll-progress').css('width', `${progress}%`);
     });
 
     // Data for achievements and certifications
     const experienceData = [
+        {
+            type: 'certification',
+            title: 'Technical Consultant Intern — Vareli Tecnec Pvt. Ltd.',
+            description: 'Government Web Platform Operations',
+            date: 'Sep 2025 - March 2026',
+            details: 'Supported a high-impact government web platform, resolved production issues, coordinated stakeholders, and contributed to platform stability at scale.',
+            certificateLink: 'https://drive.google.com/file/d/1j-Yn2IrL3CEIsqWJt6umUPobQ7UwRAFg/view?usp=sharing'
+        },
         {
             type: 'achievement',
             title: 'Participant In Quiz Competition By GeeksforGeeks',
@@ -91,8 +121,16 @@ $(document).ready(function(){
             if (filter === 'all' || item.type === filter) {
                 // Alternate left and right containers for visual appeal
                 const side = index % 2 === 0 ? 'left' : 'right';
+                const certificateButton = item.certificateLink ? `
+                                <div class="cert-wrapper">
+                                    <a href="${item.certificateLink}" target="_blank" rel="noopener noreferrer" class="cert-btn">
+                                      <i class="fas fa-certificate"></i> View Certificate
+                                    </a>
+                                </div>` : '';
+                const certifiedBadge = item.certificateLink ? `<span class="certified-badge">✓ Certified</span>` : '';
                 const html = `
                     <div class="container ${side}" data-type="${item.type}">
+                        ${certifiedBadge}
                         <div class="content">
                             <div class="tag">
                                 <h2>${item.title}</h2>
@@ -102,6 +140,7 @@ $(document).ready(function(){
                                 <p>${item.date}</p>
                                 <div class="details hidden">${item.details}</div>
                                 <button class="toggle-details">Show Details</button>
+                                ${certificateButton}
                             </div>
                         </div>
                     </div>
@@ -112,6 +151,7 @@ $(document).ready(function(){
 
         // Re-apply ScrollReveal animations after rendering
         ScrollReveal().reveal('.experience .timeline .container', { interval: 400 });
+        observeRevealTargets();
     }
 
     // Initial render of timeline
@@ -147,6 +187,7 @@ $(document).ready(function(){
 
     /* SCROLL EXPERIENCE */
     srtop.reveal('.experience .timeline', { delay: 400 });
+    observeRevealTargets();
 
     // Start of Tawk.to Live Chat
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();

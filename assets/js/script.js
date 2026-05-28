@@ -85,7 +85,7 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["frontend development", "backend development", "web designing", "android development", "web development"],
+    strings: ["frontend development", "backend development", "web designing", "web developer"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
@@ -121,7 +121,8 @@ function showSkills(skills) {
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
     let projectHTML = "";
-    projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
+    const visibleProjects = projects.slice(0, 10).filter(project => project.category != "android");
+    visibleProjects.forEach((project, index) => {
         projectHTML += `
         <div class="box tilt">
       <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
@@ -133,6 +134,7 @@ function showProjects(projects) {
           <p>${project.desc}</p>
           <div class="btns">
             <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <button class="btn details-btn" data-index="${index}"><i class="fas fa-info-circle"></i> Overview</button>
             <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
           </div>
         </div>
@@ -140,6 +142,80 @@ function showProjects(projects) {
     </div>`
     });
     projectsContainer.innerHTML = projectHTML;
+
+    if (!document.querySelector("#project-modal")) {
+        document.body.insertAdjacentHTML("beforeend", `
+<div id="project-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7);
+  z-index:9999; overflow-y:auto; padding:2rem;">
+  <div id="modal-inner" style="background:#fff; border-radius:20px; max-width:700px;
+    margin:2rem auto; padding:2.5rem; position:relative; font-family:'Poppins',sans-serif;">
+    <button id="modal-close" style="position:absolute;top:1.5rem;right:1.5rem;
+      background:none;border:none;font-size:2rem;cursor:pointer;color:#6b7280;">✕</button>
+    <div id="modal-content"></div>
+  </div>
+</div>`);
+    }
+
+    function closeProjectModal() {
+        $("#project-modal").hide();
+        $("body").css("overflow", "auto");
+    }
+
+    $(".details-btn").on("click", function () {
+        const project = visibleProjects[$(this).data("index")];
+        $("#modal-content").html(`
+<div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;">
+  <img src="/assets/images/projects/${project.image}.png"
+    style="width:80px;height:60px;object-fit:cover;border-radius:10px;" alt="${project.name}">
+  <div>
+    <h2 style="font-size:2rem;font-weight:700;color:#1f2937;margin:0;">${project.name}</h2>
+    <p style="color:#6b7280;font-size:1.3rem;margin:0.3rem 0 0;">${project.overview}</p>
+  </div>
+</div>
+
+<div style="margin-bottom:1.5rem;">
+  <h3 style="font-size:1.4rem;font-weight:600;color:#9333ea;margin-bottom:0.8rem;">
+    <i class="fas fa-layer-group"></i> Tech Stack
+  </h3>
+  <div style="display:flex;flex-wrap:wrap;gap:0.6rem;">
+    ${project.stack.map(s => `<span style="background:#f3e8ff;color:#7e22ce;padding:0.3rem 1rem;
+      border-radius:20px;font-size:1.2rem;font-weight:600;">${s}</span>`).join('')}
+  </div>
+</div>
+
+<div style="margin-bottom:2rem;">
+  <h3 style="font-size:1.4rem;font-weight:600;color:#9333ea;margin-bottom:0.8rem;">
+    <i class="fas fa-check-circle"></i> Key Features
+  </h3>
+  <ul style="padding-left:1.5rem;list-style:none;">
+    ${project.features.map(f => `<li style="color:#374151;font-size:1.3rem;line-height:2;
+      display:flex;align-items:center;gap:0.5rem;">
+      <i class="fas fa-arrow-right" style="color:#9333ea;font-size:1rem;"></i>${f}</li>`).join('')}
+  </ul>
+</div>
+
+<div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+  <a href="${project.links.view}" target="_blank"
+    style="background:#9333ea;color:#fff;padding:1rem 2.5rem;border-radius:10px;
+    font-size:1.4rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
+    <i class="fas fa-eye"></i> Live Demo
+  </a>
+  <a href="${project.links.code}" target="_blank"
+    style="background:#1f2937;color:#fff;padding:1rem 2.5rem;border-radius:10px;
+    font-size:1.4rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+</div>`);
+        $("#project-modal").css("display", "block");
+        $("body").css("overflow", "hidden");
+    });
+
+    $("#modal-close").on("click", closeProjectModal);
+    $("#project-modal").on("click", function (e) {
+        if (e.target === this) {
+            closeProjectModal();
+        }
+    });
 
     // <!-- tilt js effect starts -->
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
@@ -259,6 +335,24 @@ srtop.reveal('.work .box', { interval: 200 });
 /* SCROLL EXPERIENCE */
 srtop.reveal('.experience .timeline', { delay: 400 });
 srtop.reveal('.experience .timeline .container', { interval: 400 });
+
+if (document.querySelector('.work-experience')) {
+    ScrollReveal().reveal('.work-card', {
+        origin: 'bottom',
+        distance: '40px',
+        duration: 800,
+        delay: 200,
+        interval: 200,
+        easing: 'ease-out',
+        reset: false
+    });
+    ScrollReveal().reveal('.work-experience .heading, .work-experience .qoute', {
+        origin: 'top',
+        distance: '30px',
+        duration: 700,
+        delay: 100
+    });
+}
 
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });

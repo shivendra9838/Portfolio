@@ -1,91 +1,111 @@
 [
-   {
+  {
     "name": "Fancy Garments",
-    "desc": "Fancy Garments is a full-stack MERN e-commerce platform with secure payments, order tracking, admin dashboard, multi-language support, and an AI-powered chatbot",
+    "desc": "Full-stack MERN e-commerce platform with secure payments, AI chatbot, and admin dashboard.",
     "image": "fancy",
     "category": "mern",
+    "overview": "Built to give local garment stores an online presence. Handles the full shopping journey from product discovery to payment and order tracking.",
+    "stack": ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe", "Razorpay", "Cloudinary", "JWT", "Tailwind CSS"],
+    "features": [
+      "Dual payment gateway (Stripe + Razorpay)",
+      "AI-powered customer support chatbot (Ishaan)",
+      "Admin dashboard with analytics",
+      "Real-time order tracking",
+      "Multi-language support (i18next)",
+      "Dark/Light theme toggle",
+      "PDF invoice generation",
+      "Newsletter + Gift card system"
+    ],
     "links": {
       "view": "https://garmentsin.vercel.app/",
       "code": "https://github.com/shivendra9838/Fancy-Garments-in-ReactJS"
     }
   },
-    {
+  {
     "name": "Travel Website",
-    "desc": "Every Travel is a responsive travel website with destination search, booking, cart checkout, and an admin panel for real-time user management.",
+    "desc": "Responsive travel booking platform with destination search, cart checkout, and admin panel.",
     "image": "flipkartmern",
     "category": "mern",
+    "overview": "A complete travel booking system where users can search destinations, add to cart, and manage bookings. Admins manage listings in real time.",
+    "stack": ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
+    "features": [
+      "Destination search and filtering",
+      "Booking and cart checkout flow",
+      "Admin panel for user management",
+      "Responsive mobile design"
+    ],
     "links": {
       "view": "https://travel-admin-panel.surge.sh/",
-      "code": "https://github.com/shivendra9838/Travel-Website-Using-HTML-CSS-Javascript?tab=readme-ov-file"
+      "code": "https://github.com/shivendra9838/Travel-Website-Using-HTML-CSS-Javascript"
     }
   },
   {
+  "name": "EduDiscover",
+  "desc": "Full-stack college discovery platform for India.",
+  "image": "edudiscover",
+  "category": "fullstack",
+  "overview": "A comprehensive platform where students can browse, filter, compare, and save Indian colleges. It is powered by a rich PostgreSQL dataset featuring top Indian institutions, complete with student reviews and Q&A.",
+  "stack": [
+    "React",
+    "Vite",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "Drizzle ORM",
+    "Clerk"
+  ],
+  "features": [
+    "Browse, filter, and compare top Indian colleges",
+    "Save favorite colleges and custom comparisons",
+    "Student reviews and interactive Q&A section",
+    "Secure authentication via Clerk"
+  ],
+  "links": {
+    "view": "https://collegefinder98.netlify.app/",
+    "code": "https://github.com/shivendra9838/Collegefinder"
+  }
+},
+{
+  "name": "Certificate-Generator",
+  "desc": "Full-stack certificate generation and management app for creating PDF and PNG certificates.",
+  "image": "certificategenerator",
+  "category": "mern",
+  "overview": "A complete certificate generation system where admins can generate certificates, search and paginate through records, and download them in PDF or PNG formats. Built with a Node.js backend and a React frontend.",
+  "stack": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "PDFKit",
+    "Sharp"
+  ],
+  "features": [
+    "Certificate generation with PDF and PNG formats",
+    "Searchable and paginated certificate table",
+    "Client-side form validation",
+    "Downloadable generated files",
+    "Dockerized deployment for frontend and backend"
+  ],
+  "links": {
+    "view": "https://certificategenrate.netlify.app/",
+    "code": "https://github.com/shivendra9838/CertificateGenrator"
+  }
+},
+  {
     "name": "Online Book Store",
-    "desc": "This site has been made using PHP with MYSQL (procedure functions)! The layout use Bootstrap to make it more responsive. It's just a simple web.site to buy and sell books.",
+    "desc": "PHP + MySQL bookstore with buy/sell functionality and Bootstrap-based responsive layout.",
     "image": "reactprojects",
     "category": "PHP",
-    "links": {
-      "view": "https://online-cse-book-store.vercel.app/",
-      "code": "https://github.com/shivendra9838/Online-CSE-Book-Store"
-    }
-  },
-  {
-  "name": "Learning Management System",
-    "desc": "A Web Based Learning Managenent System. This Project is developed using HTML, CSS, Javascript. this project aims to create a cooperative platform that bridges people together and helps them to learn.",
-    "image": "flipkartphp",
-    "category": "Simple",
-    "links": {
-      "view": "https://github.com/shivendra9838/Learning-Management-System-HTML-CSS/tree/main/priyanshu",
-      "code": "https://github.com/shivendra9838/Learning-Management-System-HTML-CSS/tree/main/priyanshu"
-    }
-  },
-
-  {
-    "name": "AI Safety Incident Dashboard",
-    "desc": "Build a simple interactive interface to demonstrate core frontend skills—UI, user interaction, state management, and input handling—aligned with HumanChain's AI safety mission.",
-    "image": "Ai",
-    "category": "Ai",
-    "links": {
-      "view": "https://aidasboard.netlify.app/",
-      "code": "https://github.com/-sable/weatherly-android"
-    }
-  },
- 
-  {
-    "name": "Furniture-Store",
-    "desc": "Furnish Your Dream Home is an online furniture store with customizable products, a 3D room planner, and a seamless shopping experience.",
-    "image": "furniture",
-    "category": "mern",
-    "links": {
-      "view": "https://truthful-stranger-production.up.railway.app/",
-      "code": "https://github.com/shivendra9838/Furniture-Website-in-Laravel"
-    }
-  },
-  {
-    "name": "Fitness Management System",
-    "desc": "Developed a console-based fitness management system in C to manage client records, workout schedules, and membership details.",
-    "image": "resumegen",
-    "category": "basicweb",
-    "links": {
-      "view": "https://github.com/shivendra9838/Fitness-Management-System-in-C",
-      "code": "https://github.com/shivendra9838/Fitness-Management-System-in-C"
-    }
-  },
-     {
-    "name": "Fancy Garments",
-    "desc": "Fancy Garments is a full-stack MERN e-commerce platform with secure payments, order tracking, admin dashboard, multi-language support, and an AI-powered chatbot",
-    "image": "fancy",
-    "category": "mern",
-    "links": {
-      "view": "https://garmentsin.vercel.app/",
-      "code": "https://github.com/shivendra9838/Fancy-Garments-in-ReactJS"
-    }
-  },
-  {
-    "name": "Online Book Store",
-    "desc": "This site has been made using PHP with MYSQL (procedure functions)! The layout use Bootstrap to make it more responsive. It's just a simple web.site to buy and sell books.",
-    "image": "reactprojects",
-    "category": "android",
+    "overview": "A simple but functional web app for buying and selling books online. Uses PHP procedural functions and MySQL for data persistence.",
+    "stack": ["PHP", "MySQL", "Bootstrap", "HTML", "CSS"],
+    "features": [
+      "Buy and sell books",
+      "Responsive Bootstrap layout",
+      "Database-backed product listings",
+      "User-friendly book catalog"
+    ],
     "links": {
       "view": "https://online-cse-book-store.vercel.app/",
       "code": "https://github.com/shivendra9838/Online-CSE-Book-Store"
@@ -93,12 +113,101 @@
   },
   {
     "name": "Learning Management System",
-    "desc": "A Web Based Learning Managenent System. This Project is developed using HTML, CSS, Javascript. this project aims to create a cooperative platform that bridges people together and helps them to learn.",
+    "desc": "Web-based LMS connecting learners and educators through a collaborative HTML/CSS/JS platform.",
     "image": "flipkartphp",
     "category": "lamp",
+    "overview": "A cooperative learning platform built to bridge students and teachers. Focused on simplicity and accessibility for first-time users.",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "features": [
+      "Course listing and browsing",
+      "Student-teacher collaboration",
+      "Clean accessible UI",
+      "Mobile-friendly layout"
+    ],
     "links": {
       "view": "https://github.com/shivendra9838/Learning-Management-System-HTML-CSS/tree/main/priyanshu",
       "code": "https://github.com/shivendra9838/Learning-Management-System-HTML-CSS/tree/main/priyanshu"
+    }
+  },
+  {
+    "name": "AI Safety Incident Dashboard",
+    "desc": "Interactive frontend dashboard for tracking AI safety incidents — built for HumanChain's mission.",
+    "image": "Ai",
+    "category": "Ai",
+    "overview": "Demonstrates core frontend skills: dynamic state management, filtering, sorting, and clean UI. Built as a take-home project aligned with AI safety tooling.",
+    "stack": ["React.js", "JavaScript", "CSS"],
+    "features": [
+      "Incident reporting UI",
+      "Filter and sort by severity",
+      "State management without external libraries",
+      "Responsive and accessible layout"
+    ],
+    "links": {
+      "view": "https://aidasboard.netlify.app/",
+      "code": "https://github.com/shivendra9838/AI-Safety-Incident-Dashboard"
+    }
+  },
+  {
+    "name": "Furniture Store",
+    "desc": "Online furniture store with customizable products, 3D room planner, and seamless checkout.",
+    "image": "furniture",
+    "category": "mern",
+    "overview": "A premium furniture shopping experience built with Laravel. Features a 3D room planner to help customers visualize pieces in their space before buying.",
+    "stack": ["Laravel", "PHP", "MySQL", "Bootstrap", "JavaScript"],
+    "features": [
+      "3D room planner",
+      "Product customization options",
+      "Smooth shopping cart and checkout",
+      "Admin product management"
+    ],
+    "links": {
+      "view": "https://truthful-stranger-production.up.railway.app/",
+      "code": "https://github.com/shivendra9838/Furniture-Website-in-Laravel"
+    }
+  },
+  {
+  "name": "VTECHSOFT-Digital-Agency",
+  "desc": "Premium IT services platform specializing in web engineering, mobile architecture, cloud DevOps, and robust APIs.",
+  "image": "vtechsoft-site",
+  "category": "frontend",
+  "overview": "A modern, highly-interactive digital agency platform designed to showcase enterprise IT services. It features a premium dark-themed UI with fluid scroll animations, detailed service capability breakdowns, case studies, contact workflows, and a dedicated admin panel for content management.",
+  "stack": [
+    "React", 
+    "TypeScript", 
+    "Tailwind CSS", 
+    "Vite", 
+    "Framer Motion", 
+    "Radix UI",
+    "Wouter"
+  ],
+  "features": [
+    "Interactive landing page with dynamic scroll-reveal animations",
+    "Comprehensive service capabilities and tech stack showcases",
+    "Client consultation contact workflow and forms",
+    "Admin panel for managing inquiries and content",
+    "Responsive, premium dark-themed glassmorphism UI design"
+  ],
+  "links": {
+    "view": "https://vtechsoft-frontend-i77svercelapp.vercel.app/",
+    "code": "https://github.com/shivendra9838/vtechsoft"
+  }
+},
+  {
+    "name": "Fitness Management System",
+    "desc": "Console-based C program managing client records, workout schedules, and memberships.",
+    "image": "resumegen",
+    "category": "basicweb",
+    "overview": "A low-level systems project written in C to manage gym clients and schedules. Demonstrates strong fundamentals in data structures, file I/O, and procedural programming.",
+    "stack": ["C", "File I/O", "Data Structures"],
+    "features": [
+      "Client record management",
+      "Workout schedule tracking",
+      "Membership status and billing",
+      "File-based persistent storage"
+    ],
+    "links": {
+      "view": "https://github.com/shivendra9838/Fitness-Management-System-in-C",
+      "code": "https://github.com/shivendra9838/Fitness-Management-System-in-C"
     }
   }
 ]
