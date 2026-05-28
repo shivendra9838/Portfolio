@@ -300,6 +300,16 @@ header .navbar ul li a:hover {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
+.social-icons a.gfg,
+.social-icons a.codechef {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.social-icons a.gfg span,
+.social-icons a.codechef span {
+  display: inline-block;
+  line-height: 44px;
+}
 .social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
@@ -320,6 +330,15 @@ header .navbar ul li a:hover {
 }
 .social-icons a.instagram:hover {
   background-color: #ee00da;
+}
+.social-icons a.gfg:hover {
+  background-color: #2f8d46;
+}
+.social-icons a.codechef:hover {
+  background-color: #5b4638;
+}
+.social-icons a.leetcode:hover {
+  background-color: #ffa116;
 }
 /* social icons end */
 
@@ -1145,11 +1164,30 @@ form .button-area {
   color: #02094b;
   border: none;
 }
+.footer .box-container .box .share a.gfg-icon,
+.footer .box-container .box .share a.codechef-icon {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 2rem;
+}
 .footer .box-container .box .share a:hover {
   background: transparent;
   transform: scale(0.98);
   border: 0.1rem solid rgb(180, 178, 178);
   color: #ffae00;
+}
+.footer .box-container .box .share a.gfg-icon:hover {
+  color: #2f8d46;
+  border-color: #2f8d46;
+}
+.footer .box-container .box .share a.codechef-icon:hover {
+  color: #5b4638;
+  border-color: #5b4638;
+}
+.footer .box-container .box .share a[aria-label="LeetCode"]:hover {
+  color: #ffa116;
+  border-color: #ffa116;
 }
 .footer .credit {
   padding: 1rem 0 0 0;
