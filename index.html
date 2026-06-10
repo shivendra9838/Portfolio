@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Shivendra, portfolio, Shivendra stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Shivendra Portfolio. Full-Stack Web Developer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/hero (2).png " type="image/x-png">
+    <title>Portfolio | Shivendra Tiwari</title>
+    <style>
+        /* ...existing code... */
+        .timeline {
+            /* Adjust padding or margin to remove extra space */
+            padding: 0;
+            margin: 0;
+        }
+        
+        /* Enhanced Work Experience Styles */
+        .work-experience {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 5rem 9%;
+            scroll-behavior: auto;
+        }
+        
+        .work-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .work-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: none;
+            padding: 0;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .work-header {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            position: relative;
+        }
+        
+        .company-logo {
+            width: 60px;
+            height: 60px;
+            background: #9333ea;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .company-logo img {
+            width: 44px;
+            height: 44px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+        
+        .company-info h3 {
+            color: #1f2937;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #1f2937 0%, #4b5563 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .company-info h4 {
+            color: #6b7280;
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .location {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #9ca3af;
+            font-size: 1rem;
+        }
+        
+        .location i {
+            color: #9333ea;
+            font-size: 0.8rem;
+        }
+        
+        .duration {
+            margin-left: auto;
+            text-align: right;
+        }
+        
+        .date {
+            display: block;
+            color: #6b7280;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .badge.current {
+            background: #10b981;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .badge.completed {
+            background: #6b7280;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .work-body {
+            padding: 2rem;
+        }
+        
+        .work-desc {
+            color: #4b5563;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(147, 51, 234, 0.02);
+            border-left: 3px solid #9333ea;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-item {
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #9333ea;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .stat-label {
+            color: #6b7280;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .responsibilities, .achievements-list {
+            margin-bottom: 2rem;
+        }
+        
+        .responsibilities h5, .achievements-list h5 {
+            color: #1f2937;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .responsibilities h5 i, .achievements-list h5 i {
+            color: #9333ea;
+            font-size: 1rem;
+        }
+        
+        .responsibility-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .resp-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: rgba(147, 51, 234, 0.02);
+            border-radius: 12px;
+            border: 1px solid transparent;
+        }
+        
+        .resp-item i {
+            color: #9333ea;
+            font-size: 1.1rem;
+        }
+        
+        .resp-item span {
+            color: #4b5563;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        
+        .achievements-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .achievements-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.75rem 0;
+            color: #4b5563;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            border-bottom: 1px solid rgba(147, 51, 234, 0.05);
+        }
+        
+        .achievements-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .achievements-list li i {
+            color: #10b981;
+            font-size: 1rem;
+            margin-top: 0.1rem;
+        }
+        
+        .work-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(147, 51, 234, 0.1);
+        }
+        
+        .tech-stack {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        
+        .tech-label {
+            color: #6b7280;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+        
+        .tech-tag {
+            background: #f8f9fa;
+            color: #9333ea;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .show-details {
+            background: #9333ea;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .work-experience {
+                padding: 3rem 5%;
+            }
+            
+            .work-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .duration {
+                margin-left: 0;
+                text-align: center;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+            
+            .responsibility-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .work-footer {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .tech-stack {
+                justify-content: center;
+            }
+        }
+        
+        /* Accessibility Improvements */
+        .work-card:focus-within {
+            outline: 2px solid #9333ea;
+            outline-offset: 2px;
+        }
+        
+        .show-details:focus {
+            outline: 2px solid #9333ea;
+            outline-offset: 2px;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        /* ...existing code... */
+    </style>
+</head>
+<body>
+
+<!-- pre loader -->
+<!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
+
+<!-- navbar starts -->
+<header>
+        <a href="/" class="logo"><i class="fab fa-node-js"></i> Shivendra </a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="https://drive.google.com/file/d/1zFC4vlpUZKKi-ndSkmvrTSBklLphzRRO/view?usp=sharing" target="_blank">Resume</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#experience">Achievements & Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- navbar ends -->
+
+
+<!-- hero section starts -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+    <h2>Hi There,<br/> I'm Shivendra <span>Tiwari</span></h2>
+    <p>i am into <span class="typing-text"></span></p>
+    <p>MERN Stack Developer · LPU Computer Science '26 · Open to Full-Time Roles</p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="gfg" aria-label="GeeksforGeeks" href="https://www.geeksforgeeks.org/profile/tiwarishivt1et" target="_blank"><span>GFG</span></a></li>
+          <li><a class="github" aria-label="GitHub" href="https://github.com/shivendra9838" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a class="codechef" aria-label="CodeChef" href="https://www.codechef.com/users/spry_sun_94" target="_blank"><span>CC</span></a></li>
+          <li><a class="leetcode" aria-label="LeetCode" href="https://leetcode.com/u/shivendrat498/" target="_blank"><i class="fas fa-code"></i></a></li>
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/techoverflows" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a class="dev" aria-label="Dev" href="https://dev.to/techoverflows" target="_blank"><i class="fab fa-dev"></i></a></li>
+        </ul>
+      </div>
+    </div>
+<div class="image">
+    <img draggable="false" class="tilt" src="./assets/images/imgg.avif.png" alt="">
+</div>
+</section>
+<!-- hero section ends -->
+
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
+    <div class="row">
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/img.png" alt="">
+    </div>
+    <div class="content">
+        <h3>I'm Shivendra</h3>
+        <span class="tag">Full Stack Developer</span>
+        
+        <p>I spent 6 months as the person responsible when a government platform serving 1 million citizens went down at 2am. I got it fixed by working together with my team. That's the kind of engineer I am — I build things that hold up under pressure, not just in demos. Currently finishing my CS degree at LPU while actively building with the MERN stack. Looking for my first full-time role where the problems are real</p>
+        
+        <div class="box-container">
+            <!-- <div class="box">
+              <p><span> age: </span> 20</p>
+              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+            </div> -->
+            <div class="box">
+              <p><span> email : </span> tiwarishivendra589@gmail.com</p>
+              <p><span> place : </span> Jaunpur,Uttar Pradesh, India - 222202</p>
+            </div>
+        </div>
+        
+        <div class="resumebtn" style="display: flex; gap: 10px;">
+          <a href="https://drive.google.com/file/d/1zFC4vlpUZKKi-ndSkmvrTSBklLphzRRO/view?usp=sharing" target="_blank" class="btn">
+              <span>View Resume</span>
+              <i class="fas fa-eye"></i>
+          </a>
+          <a href="https://drive.google.com/uc?export=download&id=1zFC4vlpUZKKi-ndSkmvrTSBklLphzRRO" class="btn" download="Shivendra_Tiwari_Resume.pdf">
+              <span>Download</span>
+              <i class="fas fa-download"></i>
+          </a>
+      </div>
+      
+
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- skills section starts -->
+<section class="skills" id="skills">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+          <div class="row" id="skillsContainer">
+
+            <!-- <div class="bar">
+              <div class="info">
+                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
+                <span>AdobeXD</span>
+              </div>
+            </div> -->
+
+      </div>
+</div>
+</section>
+<!-- skills section ends -->
+
+
+<!-- work project section starts -->
+<section class="work" id="work">
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+  <div class="box-container">
+
+    <!-- <div class="box tilt">
+      <img draggable="false" src="./assets/images/projects/portfolio1.PNG" alt="" />
+      <div class="content">
+        <div class="tag">
+        <h3>Portfolio Website</h3>
+        </div>
+        <div class="desc">
+          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
+          <div class="btns">
+            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/Shivendra/Portfolio-Website" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+</div>
+
+<div class="viewall">
+  <a href="/projects" class="btn"><span>View All</span>
+    <i class="fas fa-arrow-right"></i>
+</a>
+</div>
+
+
+</section>
+<!-- work project section ends -->
+
+<!-- work experience section starts -->
+<section class="work-experience" id="work-experience">
+
+  <h2 class="heading"><i class="fas fa-briefcase"></i>Work <span>Experience</span></h2>
+
+  <div class="work-container">
+
+    <div class="work-card">
+      <div class="work-header">
+        <div class="company-logo">
+          <img src="./assets/images/vareli-tecnac-logo.webp" alt="Vareli Tecnec Pvt. Ltd. logo">
+        </div>
+        <div class="company-info">
+          <h3>Technical Consultant Intern</h3>
+          <h4>Vareli Tecnec Pvt. Ltd.</h4>
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>India</span>
+          </div>
+        </div>
+        <div class="duration">
+          <span class="date">Sep 2025 - March 2026</span>
+          <span class="badge completed">Completed</span>
+        </div>
+      </div>
+      
+      <div class="work-body">
+        <p class="work-desc">Successfully contributed to the execution and operational management of a high-impact government web platform serving millions of citizens nationwide. Played a pivotal role in ensuring seamless functionality, delivering critical technical solutions within demanding timelines, and maintaining system stability during peak usage periods. Demonstrated exceptional problem-solving skills and technical expertise in a fast-paced, mission-critical environment.</p>
+        
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Months Duration</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">150+</div>
+            <div class="stat-label">Bugs Resolved</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Modules Managed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Platform Support</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">99.9%</div>
+            <div class="stat-label">Uptime Achieved</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">2M+</div>
+            <div class="stat-label">Users Supported</div>
+          </div>
+        </div>
+        
+        <div class="responsibilities">
+          <h5><i class="fas fa-tasks"></i> Key Responsibilities</h5>
+          <div class="responsibility-grid">
+            <div class="resp-item">
+              <i class="fas fa-globe"></i>
+              <span>Government Web Platform Operations</span>
+            </div>
+            <div class="resp-item">
+              <i class="fas fa-bug"></i>
+              <span>Bug Identification & Resolution</span>
+            </div>
+            <div class="resp-item">
+              <i class="fas fa-chart-bar"></i>
+              <span>Technical Analysis & Performance Reviews</span>
+            </div>
+            <div class="resp-item">
+              <i class="fas fa-users"></i>
+              <span>Client & Stakeholder Coordination</span>
+            </div>
+            <div class="resp-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>System Security & Compliance</span>
+            </div>
+            <div class="resp-item">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>Performance Monitoring</span>
+            </div>
+            <div class="resp-item">
+              <i class="fas fa-file-alt"></i>
+              <span>Documentation & Reporting</span>
+            </div>
+            <div class="resp-item">
+              <i class="fas fa-headset"></i>
+              <span>Technical Support & Training</span>
+            </div>
+            <div class="resp-item">
+              <i class="fas fa-database"></i>
+              <span>Database Management</span>
+            </div>
+            <div class="resp-item">
+              <i class="fas fa-network-wired"></i>
+              <span>Network Infrastructure</span>
+            </div>
+            <div class="resp-item">
+              <i class="fas fa-code"></i>
+              <span>Code Review & Testing</span>
+            </div>
+            <div class="resp-item">
+              <i class="fas fa-chart-line"></i>
+              <span>Analytics & Reporting</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="achievements-list">
+          <h5><i class="fas fa-trophy"></i> Key Contributions</h5>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Successfully supported execution and operational management of a critical government web platform serving 2M+ citizens, ensuring smooth functionality and resolving technical issues within tight deadlines</li>
+            <li><i class="fas fa-check-circle"></i> Identified, analyzed, and coordinated resolution of over 150 website bugs across 20+ modules, significantly improving overall system stability and performance by 45%</li>
+            <li><i class="fas fa-check-circle"></i> Conducted comprehensive technical analysis and performance reviews while managing client interactions, contributing to enhanced platform functionality and effective stakeholder coordination</li>
+            <li><i class="fas fa-check-circle"></i> Implemented proactive monitoring systems that reduced system downtime by 70% and improved user satisfaction scores from 85% to 95%</li>
+            <li><i class="fas fa-check-circle"></i> Developed detailed technical documentation and training materials that streamlined onboarding processes for new team members, reducing training time by 50%</li>
+            <li><i class="fas fa-check-circle"></i> Led crisis management during peak usage periods, successfully handling 500K+ concurrent users without system failures</li>
+            <li><i class="fas fa-check-circle"></i> Optimized database queries and API responses, resulting in 60% faster page load times and improved user experience</li>
+            <li><i class="fas fa-check-circle"></i> Established automated testing protocols that caught 90% of potential issues before deployment, preventing production downtime</li>
+          </ul>
+        </div>
+        
+        <div class="work-footer">
+          <div class="tech-stack">
+            <span class="tech-label">Focus Areas:</span>
+            <span class="tech-tag">Web Platform Management</span>
+            <span class="tech-tag">Bug Tracking</span>
+            <span class="tech-tag">Technical Analysis</span>
+            <span class="tech-tag">Stakeholder Coordination</span>
+            <span class="tech-tag">Performance Optimization</span>
+            <span class="tech-tag">System Security</span>
+            <span class="tech-tag">Documentation</span>
+            <span class="tech-tag">Database Management</span>
+            <span class="tech-tag">Network Infrastructure</span>
+            <span class="tech-tag">Quality Assurance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="morebtn">
+    <a href="/work-experience.html" class="btn"><span>View All Experience</span>
+      <i class="fas fa-arrow-right"></i>
+  </a>
+  </div>
+
+</section>
+<!-- work experience section ends -->
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+    <div class="box">
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/college.png" alt="">
+        </div>
+        <div class="content">
+        <h3>Lovely Professional University, Phagwara, Punjab</h3>
+        <p>College of engineering and research</p>
+        <h4>2022-2026 | Present</h4>
+        <h4>CGPA: 7.62</h4>
+        </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="./assets/images/educat/school.png" alt="">
+      </div>
+      <div class="content">
+      <h3>City Public School, Jaunpur, Uttar Pradesh</h3>
+      <p>CBSE</p>
+      <h4>2020-2022 | Completed</h4>
+      </div>
+    </div>
+
+</div>
+</section>
+<!-- education section ends -->
+
+<!-- experience section starts -->
+<section class="experience" id="experience">
+
+  <h2 class="heading"><i class="fas fa-briefcase"></i>Achievements & <span>Certification</span></h2>
+
+  <div class="timeline">
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>Participant in Quiz Competition by GeeksforGeeks</h2>
+        </div>
+        <div class="desc">
+            <h3>Secured 1st position in the quiz</h3>
+            <p>August 2024</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>Participant in Hack-A-Throne by GeeksforGeeks</h2>
+        </div>
+        <div class="desc">
+            <h3>top 5 position among 150+ teams on GeeksforGeeks</h3>
+            <p>August 2024</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>HackerRank 5-Star in C++</h2>
+        </div>
+        <div class="desc">
+            <h3>Demonstrated strong problem-solving skills and proficiency in programming</h3>
+            <p>March 25</p>
+        </div>
+      </div>
+    </div>
+
+  <div class="morebtn">
+    <a href="/experience" class="btn"><span>View All</span>
+      <i class="fas fa-arrow-right"></i>
+  </a>
+  </div>
+
+</div>
+
+</section>
+<!-- experience section ends -->
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+    <form id="contact-form">
+      
+      <div class="form-group">
+        <div class="field">
+          <input type="text" name="name" placeholder="Name" required>
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Email" required>
+          <i class='fas fa-envelope'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="phone" placeholder="Phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="message">
+        <textarea placeholder="Message" name="message" required></textarea>
+        <i class="fas fa-comment-dots"></i>
+        </div>
+        </div>
+      <div class="button-area">
+        <button type="submit">
+          Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
+<!-- contact section ends -->
+
+
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Shivendra's Portfolio</h3>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+          <a href="#work-experience"><i class="fas fa-chevron-circle-right"></i> work experience</a>
+          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+91 9569574750</p>
+          <p> <i class="fas fa-envelope"></i>tiwarishivendra589@gmail.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Prayagraj, UP, India-222202</p>
+          <div class="share">
+
+              <a href="https://www.geeksforgeeks.org/profile/tiwarishivt1et" class="gfg-icon" aria-label="GeeksforGeeks" target="_blank">GFG</a>
+              <a href="https://github.com/shivendra9838" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="mailto:tiwarishivendra589@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="https://www.codechef.com/users/spry_sun_94" class="codechef-icon" aria-label="CodeChef" target="_blank">CC</a>
+              <a href="https://leetcode.com/u/shivendrat498/" class="fas fa-code" aria-label="LeetCode" target="_blank"></a>
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/shivendra-tiwari-63ab1524a/"> Shivendra Tiwari</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- particle.js links -->
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
