@@ -1,5 +1,25 @@
 [
   {
+    "name": "Journey Junction",
+    "desc": "Full-stack travel platform for discovering destinations, planning trips, bookings, payments, and admin tourism management.",
+    "image": "journeyjunction",
+    "category": "mern",
+    "overview": "Journey Junction is a complete travel experience platform where users can explore destinations across India, plan trips, manage bookings, make Stripe payments, and track their travel activity through a polished dashboard.",
+    "stack": ["React", "TypeScript", "Vite", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Mongoose", "Stripe", "Cloudinary", "Socket.io"],
+    "features": [
+      "Dynamic destination discovery and detail pages",
+      "Trip planning with hotels, transport, meals, activities, and pickup options",
+      "Secure authentication with role-based admin access",
+      "Stripe Checkout integration for paid bookings",
+      "Admin panel for destinations, bookings, reviews, inquiries, and users",
+      "Traveler dashboard with bookings, payment status, wishlist, and reviews"
+    ],
+    "links": {
+      "view": "https://github.com/shivendra9838/Journey-Junction",
+      "code": "https://github.com/shivendra9838/Journey-Junction"
+    }
+  },
+  {
     "name": "Fancy Garments",
     "desc": "Full-stack MERN e-commerce platform with secure payments, AI chatbot, and admin dashboard.",
     "image": "fancy",
