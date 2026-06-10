@@ -1,25 +1,5 @@
 [
   {
-    "name": "Journey Junction",
-    "desc": "Full-stack travel platform for discovering destinations, planning trips, bookings, payments, and admin tourism management.",
-    "image": "journeyjunction",
-    "category": "mern",
-    "overview": "Journey Junction is a complete travel experience platform where users can explore destinations across India, plan trips, manage bookings, make Stripe payments, and track their travel activity through a polished dashboard.",
-    "stack": ["React", "TypeScript", "Vite", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Mongoose", "Stripe", "Cloudinary", "Socket.io"],
-    "features": [
-      "Dynamic destination discovery and detail pages",
-      "Trip planning with hotels, transport, meals, activities, and pickup options",
-      "Secure authentication with role-based admin access",
-      "Stripe Checkout integration for paid bookings",
-      "Admin panel for destinations, bookings, reviews, inquiries, and users",
-      "Traveler dashboard with bookings, payment status, wishlist, and reviews"
-    ],
-    "links": {
-      "view": "https://github.com/shivendra9838/Journey-Junction",
-      "code": "https://github.com/shivendra9838/Journey-Junction"
-    }
-  },
-  {
     "name": "Fancy Garments",
     "desc": "Full-stack MERN e-commerce platform with secure payments, AI chatbot, and admin dashboard.",
     "image": "fancy",
@@ -42,23 +22,62 @@
     }
   },
   {
-    "name": "Travel Website",
-    "desc": "Responsive travel booking platform with destination search, cart checkout, and admin panel.",
-    "image": "flipkartmern",
+    "name": "Journey Junction",
+    "desc": "Travel discovery and booking website with a clean responsive interface for exploring destinations.",
+    "image": "Travel",
     "category": "mern",
-    "overview": "A complete travel booking system where users can search destinations, add to cart, and manage bookings. Admins manage listings in real time.",
-    "stack": ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
+    "overview": "Travel discovery and booking platform with a clean responsive interface for exploring destinations, planning trips, managing bookings, and completing secure payments.",
+    "stack": ["React.js", "Node.js", "Typescript", "Express.js", "MongoDB", "Mongoose ODM", "Stripe", "Cloudinary", "JWT", "Tailwind CSS", "Shadcn UI / Radix UI", "Framer Motion", "Redis", "Gemini API", "OpenWeather API", "Socket.io"],
     "features": [
-      "Destination search and filtering",
-      "Booking and cart checkout flow",
-      "Admin panel for user management",
-      "Responsive mobile design"
+      "Destination showcase sections",
+      "Dynamic destination details pages",
+      "User signup, login, and Google authentication",
+      "Complete trip booking workflow",
+      "Hotel, transport, and meal selection",
+      "Secure Stripe payment integration",
+      "User dashboard for bookings and payments",
+      "Admin panel for managing travel data and user inquiries",
+      "Real-time chat support with Socket.io",
+      "Weather info integration with OpenWeather API",
+      "AI-powered travel recommendations using Gemini API",
+      "Interactive UI with Framer Motion animations",
+      "Responsive design with Tailwind CSS and Shadcn UI components",
+      "Cloudinary image and video management",
+      "Email and real-time notifications",
+      "Clean navigation and premium visual design"
     ],
     "links": {
-      "view": "https://travel-admin-panel.surge.sh/",
-      "code": "https://github.com/shivendra9838/Travel-Website-Using-HTML-CSS-Javascript"
+      "view": "https://journey-junction-backend-livid.vercel.app/",
+      "code": "https://github.com/shivendra9838/Journey-Junction"
     }
   },
+  {
+  "name": "VTECHSOFT-Digital-Agency",
+  "desc": "Premium IT services platform specializing in web engineering, mobile architecture, cloud DevOps, and robust APIs.",
+  "image": "vtechsoft-site",
+  "category": "frontend",
+  "overview": "A modern, highly-interactive digital agency platform designed to showcase enterprise IT services. It features a premium dark-themed UI with fluid scroll animations, detailed service capability breakdowns, case studies, contact workflows, and a dedicated admin panel for content management.",
+  "stack": [
+    "React", 
+    "TypeScript", 
+    "Tailwind CSS", 
+    "Vite", 
+    "Framer Motion", 
+    "Radix UI",
+    "Wouter"
+  ],
+  "features": [
+    "Interactive landing page with dynamic scroll-reveal animations",
+    "Comprehensive service capabilities and tech stack showcases",
+    "Client consultation contact workflow and forms",
+    "Admin panel for managing inquiries and content",
+    "Responsive, premium dark-themed glassmorphism UI design"
+  ],
+  "links": {
+    "view": "https://vtechsoft-frontend-i77svercelapp.vercel.app/",
+    "code": "https://github.com/shivendra9838/vtechsoft"
+  }
+},
   {
   "name": "EduDiscover",
   "desc": "Full-stack college discovery platform for India.",
@@ -185,33 +204,6 @@
       "code": "https://github.com/shivendra9838/Furniture-Website-in-Laravel"
     }
   },
-  {
-  "name": "VTECHSOFT-Digital-Agency",
-  "desc": "Premium IT services platform specializing in web engineering, mobile architecture, cloud DevOps, and robust APIs.",
-  "image": "vtechsoft-site",
-  "category": "frontend",
-  "overview": "A modern, highly-interactive digital agency platform designed to showcase enterprise IT services. It features a premium dark-themed UI with fluid scroll animations, detailed service capability breakdowns, case studies, contact workflows, and a dedicated admin panel for content management.",
-  "stack": [
-    "React", 
-    "TypeScript", 
-    "Tailwind CSS", 
-    "Vite", 
-    "Framer Motion", 
-    "Radix UI",
-    "Wouter"
-  ],
-  "features": [
-    "Interactive landing page with dynamic scroll-reveal animations",
-    "Comprehensive service capabilities and tech stack showcases",
-    "Client consultation contact workflow and forms",
-    "Admin panel for managing inquiries and content",
-    "Responsive, premium dark-themed glassmorphism UI design"
-  ],
-  "links": {
-    "view": "https://vtechsoft-frontend-i77svercelapp.vercel.app/",
-    "code": "https://github.com/shivendra9838/vtechsoft"
-  }
-},
   {
     "name": "Fitness Management System",
     "desc": "Console-based C program managing client records, workout schedules, and memberships.",
