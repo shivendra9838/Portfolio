@@ -41,78 +41,27 @@ $(document).ready(function(){
     // Data for achievements and certifications
     const experienceData = [
         {
-            type: 'certification',
-            title: 'Technical Consultant Intern — Vareli Tecnec Pvt. Ltd.',
-            description: 'Government Web Platform Operations',
-            date: 'Sep 2025 - March 2026',
-            details: 'Supported a high-impact government web platform, resolved production issues, coordinated stakeholders, and contributed to platform stability at scale.',
-            certificateLink: 'https://drive.google.com/file/d/1j-Yn2IrL3CEIsqWJt6umUPobQ7UwRAFg/view?usp=sharing'
-        },
-        {
             type: 'achievement',
-            title: 'Participant In Quiz Competition By GeeksforGeeks',
-            description: 'Secured 1st Position In The Quiz',
+            title: 'Participant in Quiz Competition by GeeksforGeeks',
+            description: 'Secured 1st position in the quiz',
             date: 'August 2024',
-            details: 'Competed against 100+ participants and demonstrated strong problem-solving skills.'
+            details: 'Demonstrated strong problem-solving skills and secured 1st position in the quiz competition.'
         },
         {
             type: 'achievement',
-            title: 'Participant In Hack-A-Throne By GeeksforGeeks',
-            description: 'Top 5 Position Among 150+ Teams',
+            title: 'Participant in Hack-A-Throne by GeeksforGeeks',
+            description: 'Top 5 position among 150+ teams on GeeksforGeeks',
             date: 'August 2024',
-            details: 'Collaborated with a team to develop an innovative solution, ranking in the top 5.'
-        },
-        {
-            type: 'achievement',
-            title: 'Summer Project: The Complete MYSQL Developer Course— LPU',
-            description: 'Summer Training | Open Source Program',
-            date: 'June 2024 - August 2024',
-            details: 'Developed a database-driven application using MySQL, contributing to open-source projects.'
+            details: 'Collaborated in a competitive hackathon environment and ranked in the top 5 among 150+ teams.'
         },
         {
             type: 'certification',
-            title: 'Leadership Through Social Influence (Coursera)',
-            description: 'Completed Course',
-            date: 'December 2024',
-            details: 'Learned strategies for effective leadership and social influence in professional settings.'
-        },
-        {
-            type: 'certification',
-            title: 'Building Web Applications in PHP (Coursera)',
-            description: 'Completed Course',
-            date: 'March 2023',
-            details: 'Mastered PHP for building dynamic web applications, including database integration.'
-        },
-        {
-            type: 'certification',
-            title: 'Explore a Career In Front-End Web Development (LinkedIn)',
-            description: 'Completed Course',
-            date: 'February 2023',
-            details: 'Gained insights into front-end development tools and career paths.'
-        },
-        {
-            type: 'certification',
-            title: 'HTML, CSS, and Javascript for Web Developer',
-            description: 'Completed Course',
-            date: 'April 2023',
-            details: 'Developed proficiency in core web development technologies.'
-        },
-        {
-            type: 'certification',
-            title: 'Server-Side Javascript with Node.js by NIIT',
-            description: 'Web Development & SEO | Internship',
-            date: 'April 2023',
-            details: 'Built server-side applications using Node.js and optimized websites for search engines.'
-        },
-        {
-            type: 'certification',
-            title: 'Cloud Computing 12 Weeks Course by NPTEL',
-            description: 'Completed Course',
-            date: 'May 2025',
-            details: 'Studied cloud computing concepts, including virtualization and deployment models.'
+            title: 'HackerRank 5-Star in C++',
+            description: 'Demonstrated strong problem-solving skills and proficiency in programming',
+            date: 'March 25',
+            details: 'Earned 5-star recognition in C++ on HackerRank, showing programming fundamentals and problem-solving ability.'
         }
     ];
-
     // Function to render timeline items
     function renderTimeline(filter = 'all') {
         const timeline = $('#timeline');

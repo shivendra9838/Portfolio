@@ -84,13 +84,15 @@ document.addEventListener('visibilitychange',
 
 
 // <!-- typed js effect starts -->
-var typed = new Typed(".typing-text", {
-    strings: ["frontend development", "backend development", "web designing", "web developer"],
-    loop: true,
-    typeSpeed: 50,
-    backSpeed: 25,
-    backDelay: 500,
-});
+if (document.querySelector(".typing-text")) {
+    var typed = new Typed(".typing-text", {
+        strings: ["frontend development", "backend development", "web designing", "web developer"],
+        loop: true,
+        typeSpeed: 50,
+        backSpeed: 25,
+        backDelay: 500,
+    });
+}
 // <!-- typed js effect ends -->
 
 async function fetchData(type = "skills") {
